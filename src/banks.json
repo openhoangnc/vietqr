@@ -1,0 +1,350 @@
+[
+    {
+        "name": "Ngân hàng TMCP Công thương Việt Nam",
+        "code": "ICB",
+        "bin": "970415",
+        "shortName": "VietinBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Ngoại Thương Việt Nam",
+        "code": "VCB",
+        "bin": "970436",
+        "shortName": "Vietcombank"
+    },
+    {
+        "name": "Ngân hàng TMCP Đầu tư và Phát triển Việt Nam",
+        "code": "BIDV",
+        "bin": "970418",
+        "shortName": "BIDV"
+    },
+    {
+        "name": "Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam",
+        "code": "VBA",
+        "bin": "970405",
+        "shortName": "Agribank"
+    },
+    {
+        "name": "Ngân hàng TMCP Phương Đông",
+        "code": "OCB",
+        "bin": "970448",
+        "shortName": "OCB"
+    },
+    {
+        "name": "Ngân hàng TMCP Quân đội",
+        "code": "MB",
+        "bin": "970422",
+        "shortName": "MBBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Kỹ thương Việt Nam",
+        "code": "TCB",
+        "bin": "970407",
+        "shortName": "Techcombank"
+    },
+    {
+        "name": "Ngân hàng TMCP Á Châu",
+        "code": "ACB",
+        "bin": "970416",
+        "shortName": "ACB"
+    },
+    {
+        "name": "Ngân hàng TMCP Việt Nam Thịnh Vượng",
+        "code": "VPB",
+        "bin": "970432",
+        "shortName": "VPBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Tiên Phong",
+        "code": "TPB",
+        "bin": "970423",
+        "shortName": "TPBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Sài Gòn Thương Tín",
+        "code": "STB",
+        "bin": "970403",
+        "shortName": "Sacombank"
+    },
+    {
+        "name": "Ngân hàng TMCP Phát triển Thành phố Hồ Chí Minh",
+        "code": "HDB",
+        "bin": "970437",
+        "shortName": "HDBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Bản Việt",
+        "code": "VCCB",
+        "bin": "970454",
+        "shortName": "VietCapitalBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Sài Gòn",
+        "code": "SCB",
+        "bin": "970429",
+        "shortName": "SCB"
+    },
+    {
+        "name": "Ngân hàng TMCP Quốc tế Việt Nam",
+        "code": "VIB",
+        "bin": "970441",
+        "shortName": "VIB"
+    },
+    {
+        "name": "Ngân hàng TMCP Sài Gòn - Hà Nội",
+        "code": "SHB",
+        "bin": "970443",
+        "shortName": "SHB"
+    },
+    {
+        "name": "Ngân hàng TMCP Xuất Nhập khẩu Việt Nam",
+        "code": "EIB",
+        "bin": "970431",
+        "shortName": "Eximbank"
+    },
+    {
+        "name": "Ngân hàng TMCP Hàng Hải",
+        "code": "MSB",
+        "bin": "970426",
+        "shortName": "MSB"
+    },
+    {
+        "name": "TMCP Việt Nam Thịnh Vượng - Ngân hàng số CAKE by VPBank",
+        "code": "CAKE",
+        "bin": "546034",
+        "shortName": "CAKE"
+    },
+    {
+        "name": "TMCP Việt Nam Thịnh Vượng - Ngân hàng số Ubank by VPBank",
+        "code": "Ubank",
+        "bin": "546035",
+        "shortName": "Ubank"
+    },
+    {
+        "name": "Ngân hàng số Timo by Ban Viet Bank (Timo by Ban Viet Bank)",
+        "code": "TIMO",
+        "bin": "963388",
+        "shortName": "Timo"
+    },
+    {
+        "name": "Viettel Money",
+        "code": "VTLMONEY",
+        "bin": "971005",
+        "shortName": "ViettelMoney"
+    },
+    {
+        "name": "VNPT Money",
+        "code": "VNPTMONEY",
+        "bin": "971011",
+        "shortName": "VNPTMoney"
+    },
+    {
+        "name": "Ngân hàng TMCP Sài Gòn Công Thương",
+        "code": "SGICB",
+        "bin": "970400",
+        "shortName": "SaigonBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Bắc Á",
+        "code": "BAB",
+        "bin": "970409",
+        "shortName": "BacABank"
+    },
+    {
+        "name": "Ngân hàng TMCP Đại Chúng Việt Nam",
+        "code": "PVCB",
+        "bin": "970412",
+        "shortName": "PVcomBank"
+    },
+    {
+        "name": "Ngân hàng Thương mại TNHH MTV Đại Dương",
+        "code": "Oceanbank",
+        "bin": "970414",
+        "shortName": "Oceanbank"
+    },
+    {
+        "name": "Ngân hàng TMCP Quốc Dân",
+        "code": "NCB",
+        "bin": "970419",
+        "shortName": "NCB"
+    },
+    {
+        "name": "Ngân hàng TNHH MTV Shinhan Việt Nam",
+        "code": "SHBVN",
+        "bin": "970424",
+        "shortName": "ShinhanBank"
+    },
+    {
+        "name": "Ngân hàng TMCP An Bình",
+        "code": "ABB",
+        "bin": "970425",
+        "shortName": "ABBANK"
+    },
+    {
+        "name": "Ngân hàng TMCP Việt Á",
+        "code": "VAB",
+        "bin": "970427",
+        "shortName": "VietABank"
+    },
+    {
+        "name": "Ngân hàng TMCP Nam Á",
+        "code": "NAB",
+        "bin": "970428",
+        "shortName": "NamABank"
+    },
+    {
+        "name": "Ngân hàng TMCP Xăng dầu Petrolimex",
+        "code": "PGB",
+        "bin": "970430",
+        "shortName": "PGBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Việt Nam Thương Tín",
+        "code": "VIETBANK",
+        "bin": "970433",
+        "shortName": "VietBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Bảo Việt",
+        "code": "BVB",
+        "bin": "970438",
+        "shortName": "BaoVietBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Đông Nam Á",
+        "code": "SEAB",
+        "bin": "970440",
+        "shortName": "SeABank"
+    },
+    {
+        "name": "Ngân hàng Hợp tác xã Việt Nam",
+        "code": "COOPBANK",
+        "bin": "970446",
+        "shortName": "COOPBANK"
+    },
+    {
+        "name": "Ngân hàng TMCP Bưu Điện Liên Việt",
+        "code": "LPB",
+        "bin": "970449",
+        "shortName": "LienVietPostBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Kiên Long",
+        "code": "KLB",
+        "bin": "970452",
+        "shortName": "KienLongBank"
+    },
+    {
+        "name": "Ngân hàng Đại chúng TNHH Kasikornbank",
+        "code": "KBank",
+        "bin": "668888",
+        "shortName": "KBank"
+    },
+    {
+        "name": "Ngân hàng Liên doanh Việt - Nga",
+        "code": "VRB",
+        "bin": "970421",
+        "shortName": "VRB"
+    },
+    {
+        "name": "DBS Bank Ltd - Chi nhánh Thành phố Hồ Chí Minh",
+        "code": "DBS",
+        "bin": "796500",
+        "shortName": "DBSBank"
+    },
+    {
+        "name": "Ngân hàng TNHH MTV Woori Việt Nam",
+        "code": "WVN",
+        "bin": "970457",
+        "shortName": "Woori"
+    },
+    {
+        "name": "Ngân hàng Kookmin - Chi nhánh Hà Nội",
+        "code": "KBHN",
+        "bin": "970462",
+        "shortName": "KookminHN"
+    },
+    {
+        "name": "Ngân hàng Kookmin - Chi nhánh Thành phố Hồ Chí Minh",
+        "code": "KBHCM",
+        "bin": "970463",
+        "shortName": "KookminHCM"
+    },
+    {
+        "name": "Ngân hàng Thương mại TNHH MTV Xây dựng Việt Nam",
+        "code": "CBB",
+        "bin": "970444",
+        "shortName": "CBBank"
+    },
+    {
+        "name": "Ngân hàng Nonghyup - Chi nhánh Hà Nội",
+        "code": "NHB HN",
+        "bin": "801011",
+        "shortName": "Nonghyup"
+    },
+    {
+        "name": "Ngân hàng TNHH MTV CIMB Việt Nam",
+        "code": "CIMB",
+        "bin": "422589",
+        "shortName": "CIMB"
+    },
+    {
+        "name": "Ngân hàng TMCP Đông Á",
+        "code": "DOB",
+        "bin": "970406",
+        "shortName": "DongABank"
+    },
+    {
+        "name": "Ngân hàng Thương mại TNHH MTV Dầu Khí Toàn Cầu",
+        "code": "GPB",
+        "bin": "970408",
+        "shortName": "GPBank"
+    },
+    {
+        "name": "Ngân hàng TNHH MTV Hong Leong Việt Nam",
+        "code": "HLBVN",
+        "bin": "970442",
+        "shortName": "HongLeong"
+    },
+    {
+        "name": "Ngân hàng United Overseas - Chi nhánh TP. Hồ Chí Minh",
+        "code": "UOB",
+        "bin": "970458",
+        "shortName": "UnitedOverseas"
+    },
+    {
+        "name": "Ngân hàng TNHH MTV HSBC (Việt Nam)",
+        "code": "HSBC",
+        "bin": "458761",
+        "shortName": "HSBC"
+    },
+    {
+        "name": "Ngân hàng Công nghiệp Hàn Quốc - Chi nhánh Hà Nội",
+        "code": "IBK - HN",
+        "bin": "970455",
+        "shortName": "IBKHN"
+    },
+    {
+        "name": "Ngân hàng TNHH MTV Public Việt Nam",
+        "code": "PBVN",
+        "bin": "970439",
+        "shortName": "PublicBank"
+    },
+    {
+        "name": "Ngân hàng Công nghiệp Hàn Quốc - Chi nhánh TP. Hồ Chí Minh",
+        "code": "IBK - HCM",
+        "bin": "970456",
+        "shortName": "IBKHCM"
+    },
+    {
+        "name": "Ngân hàng TNHH Indovina",
+        "code": "IVB",
+        "bin": "970434",
+        "shortName": "IndovinaBank"
+    },
+    {
+        "name": "Ngân hàng TNHH MTV Standard Chartered Bank Việt Nam",
+        "code": "SCVN",
+        "bin": "970410",
+        "shortName": "StandardChartered"
+    }
+]
