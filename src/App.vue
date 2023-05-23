@@ -1,14 +1,16 @@
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from 'vue'
 import { makeVietQRContent } from '../libs/vietqr';
-
 import banks from './banks.json'
+import domtoimage from 'dom-to-image';
+
 
 const amount = ref()
 const description = ref('')
 const bankId = ref('')
 const accountId = ref('')
 
+const selectedBank = computed(() => banks.find(bank => bank.bin === bankId.value))
 
 watch(bankId, () => {
   window.localStorage.setItem('bankId', bankId.value)
@@ -55,6 +57,57 @@ const qrContent = computed(() => makeVietQRContent({
   description: description.value.trim(),
 }))
 
+const copyText = ref('Copy mã QR')
+
+const qrNode = ref<HTMLDivElement>()
+function dataURLtoBlob(dataURL: string) {
+  // Split the data URL into two parts: the header and the data
+  var parts = dataURL.split(',');
+  var mimeType = parts[0].match(/:(.*?);/)?.[1]; // Extract the MIME type from the header
+
+  // Decode the base64-encoded data
+  var base64Data = atob(parts[1]);
+
+  // Create a Uint8Array from the raw binary data
+  var arrayBuffer = new ArrayBuffer(base64Data.length);
+  var uint8Array = new Uint8Array(arrayBuffer);
+  for (var i = 0; i < base64Data.length; i++) {
+    uint8Array[i] = base64Data.charCodeAt(i);
+  }
+
+  // Create a Blob object with the MIME type
+  return new Blob([uint8Array], { type: mimeType });
+}
+
+const copyImage = () => {
+
+  if (!qrNode.value) {
+    return
+  }
+
+  domtoimage.toPng(qrNode.value)
+    .then(function (dataUrl: string) {
+      navigator.clipboard.write([
+        new ClipboardItem({
+          ['image/png']: dataURLtoBlob(dataUrl)
+        })
+      ])
+        .then(() => {
+          copyText.value = 'Đã copy'
+          setTimeout(() => {
+            copyText.value = 'Copy mã QR'
+          }, 2000);
+        })
+        .catch((error) => {
+          alert('Copy failed: ' + error)
+        });
+    })
+    .catch(function (error: any) {
+      console.error('oops, something went wrong!', error);
+    });
+
+
+}
 </script>
 
 <template>
@@ -62,7 +115,8 @@ const qrContent = computed(() => makeVietQRContent({
     <div class="inputs">
       <div style="text-align: left;">
         <p>
-          <a href="https://github.com/openhoangnc/vietqr">VietQR generator - mã nguồn mở phát triển bởi openhoangnc</a>
+          <a target="_blank" href="https://github.com/openhoangnc/vietqr">VietQR generator <br>mã nguồn mở phát triển bởi
+            openhoangnc</a>
         </p>
       </div>
       <div>
@@ -88,8 +142,13 @@ const qrContent = computed(() => makeVietQRContent({
     </div>
 
     <div class="output">
-      <textarea class="output-text" readonly>{{ qrContent }}</textarea>
-      <img class="qr" :src="`https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=${qrContent}`" alt="QR" />
+      <button class="copy-btn" @click="copyImage">{{ copyText }}</button>
+
+      <div class="qr-overlay" ref="qrNode">
+        <span class="qr-text-top" v-if="selectedBank && accountId">{{ selectedBank?.shortName }} - {{ accountId }}</span>
+        <img class="qr-image" :src="`https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=${qrContent}`" alt="QR" />
+        <span class="qr-text-bottom">vietqr.afixer.app</span>
+      </div>
     </div>
   </main>
 </template>
@@ -100,11 +159,12 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 400px;
+  padding: 30px;
 }
 
 .bank-select {
-  width: 380px;
+  width: 280px;
   height: 30px;
 }
 
@@ -143,16 +203,52 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 
 .output-text {
   width: 100%;
 }
 
-.qr {
+.qr-overlay {
+  width: 400px;
+  height: 400px;
+  display: block;
+  position: relative;
+}
+
+.qr-text-top {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  white-space: nowrap;
+}
+
+.qr-text-bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  white-space: nowrap;
+}
+
+.qr-image {
   width: 100%;
-  padding: 1.5em;
-  filter: brightness(120%);
-  filter: contrast(120%);
+}
+
+.copy-btn {
+  width: 150px;
+  height: 40px;
+  font-size: large;
+  border: 1px solid #aeaeae5b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  box-shadow: 0 0 20px #00ff66c8;
 }
 </style>
