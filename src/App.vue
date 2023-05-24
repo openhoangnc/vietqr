@@ -147,7 +147,7 @@ const copyImage = () => {
       <div class="qr-overlay" ref="qrNode">
         <span class="qr-text-top" v-if="selectedBank && accountId">{{ selectedBank?.shortName }} - {{ accountId }}</span>
         <img class="qr-image" :src="`https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=${qrContent}`" alt="QR" />
-        <span class="qr-text-bottom">vietqr.afixer.app</span>
+        <span class="qr-text-bottom">afixer.app/vietqr</span>
       </div>
     </div>
   </main>
