@@ -237,6 +237,7 @@ main {
 
 .qr-image {
   width: 100%;
+  image-rendering: pixelated;
 }
 
 .copy-btn {
