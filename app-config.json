@@ -1,0 +1,23 @@
+{
+  "app": {
+    "title": "VietQR",
+    "headerTitle": "VietQR",
+    "headerColor": "#1843EF",
+    "textColor": "white",
+    "statusBarColor": "#1843EF",
+    "leftButton": "back",
+    "statusBar": "normal",
+    "actionBarHidden": true,
+    "hideAndroidBottomNavigationBar": false,
+    "hideIOSSafeAreaBottom": false
+  },
+  "debug": false,
+  "listCSS": [
+    "/assets/index-ec871214.css"
+  ],
+  "listSyncJS": [
+    "inline.js",
+    "/assets/index-ccfd392e.js"
+  ],
+  "listAsyncJS": []
+}
