@@ -3,7 +3,7 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { makeVietQRContent } from '../libs/vietqr';
 import banks from './banks.json'
 import domtoimage from 'dom-to-image';
-
+import QRCode from "qrcode-svg";
 
 const amount = ref()
 const description = ref('')
@@ -56,6 +56,19 @@ const qrContent = computed(() => makeVietQRContent({
   amount: amount.value,
   description: description.value.trim(),
 }))
+
+const qrSVG = computed(() => {
+  const qr = new QRCode({
+    content: qrContent.value,
+    padding: 5,
+    width: 300,
+    height: 300,
+    color: "#000000",
+    background: "#ffffff",
+    ecl: "M"
+  });
+  return qr.svg()
+})
 
 const copyText = ref('Copy mã QR')
 
@@ -146,7 +159,7 @@ const copyImage = () => {
 
       <div class="qr-overlay" ref="qrNode">
         <span class="qr-text-top" v-if="selectedBank && accountId">{{ selectedBank?.shortName }} - {{ accountId }}</span>
-        <img class="qr-image" :src="`https://chart.googleapis.com/chart?chs=300x300&cht=qr&chl=${qrContent}`" alt="QR" />
+        <div v-html="qrSVG" class="qr-image"></div>
         <span class="qr-text-bottom">afixer.app/vietqr</span>
       </div>
     </div>
@@ -211,15 +224,13 @@ main {
 }
 
 .qr-overlay {
-  width: 400px;
-  height: 400px;
   display: block;
   position: relative;
 }
 
 .qr-text-top {
   position: absolute;
-  top: 10px;
+  top: 1px;
   left: 50%;
   transform: translateX(-50%);
   color: #000;
@@ -228,7 +239,7 @@ main {
 
 .qr-text-bottom {
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
   color: #000;
