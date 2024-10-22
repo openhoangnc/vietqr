@@ -20,9 +20,30 @@ watch(accountId, () => {
   window.localStorage.setItem('accountId', accountId.value)
 })
 
-watch(amount, () => {
-  window.localStorage.setItem('amount', amount.value.toString())
-})
+let debouncingStorage = null
+
+const updateAmount = (event: InputEvent) => {
+  const target = event.target as HTMLInputElement
+
+  if (debouncingStorage) {
+    clearTimeout(debouncingStorage)
+  }
+
+  setTimeout(() => {
+    // remove leading zero
+    let v = target.value.toString().replace(/^0+/, '')
+    
+    // remove any non-digit character
+    v = v.replace(/\D/g, '')
+
+    // insert comma every 3 digits
+    v = v.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+
+    amount.value = v
+
+    window.localStorage.setItem('amount', v)
+  }, 100)
+}
 
 watch(description, () => {
   window.localStorage.setItem('content', description.value)
@@ -41,7 +62,7 @@ onMounted(() => {
 
   const amountFromStorage = window.localStorage.getItem('amount')
   if (amountFromStorage) {
-    amount.value = parseInt(amountFromStorage)
+    amount.value = amountFromStorage
   }
 
   const contentFromStorage = window.localStorage.getItem('content')
@@ -53,7 +74,7 @@ onMounted(() => {
 const qrContent = computed(() => makeVietQRContent({
   bankId: bankId.value,
   accountId: accountId.value,
-  amount: amount.value,
+  amount: parseInt(amount.value?.replace(/\D/g, '')),
   description: description.value.trim(),
 }))
 
@@ -146,7 +167,7 @@ const copyImage = () => {
       </div>
       <div>
         <span>Số tiền</span>
-        <input maxlength="13" type="number" v-model="amount" placeholder="Tùy chọn, tối đa 13 số" />
+        <input maxlength="16" type="text" v-model="amount" @input="updateAmount($event)" placeholder="Tùy chọn, tối đa 13 số" />
       </div>
       <div>
         <span>Nội dung</span>
