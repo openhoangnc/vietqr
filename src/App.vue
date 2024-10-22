@@ -20,9 +20,9 @@ watch(accountId, () => {
   window.localStorage.setItem('accountId', accountId.value)
 })
 
-let debouncingStorage = null
+let debouncingStorage: number = 0
 
-const updateAmount = (event: InputEvent) => {
+const updateAmount = (event: Event) => {
   const target = event.target as HTMLInputElement
 
   if (debouncingStorage) {
