@@ -126,7 +126,7 @@
         "shortName": "Timo"
     },
     {
-        "name": "Viettel Money",
+        "name": "Tổng Công ty Dịch vụ số Viettel - Chi nhánh tập đoàn công nghiệp viễn thông Quân Đội",
         "code": "VTLMONEY",
         "bin": "971005",
         "shortName": "ViettelMoney"
@@ -222,10 +222,10 @@
         "shortName": "COOPBANK"
     },
     {
-        "name": "Ngân hàng TMCP Bưu Điện Liên Việt",
+        "name": "Ngân hàng TMCP Lộc Phát Việt Nam",
         "code": "LPB",
         "bin": "970449",
-        "shortName": "LienVietPostBank"
+        "shortName": "LPBank"
     },
     {
         "name": "Ngân hàng TMCP Kiên Long",
@@ -240,28 +240,34 @@
         "shortName": "KBank"
     },
     {
-        "name": "Ngân hàng Liên doanh Việt - Nga",
-        "code": "VRB",
-        "bin": "970421",
-        "shortName": "VRB"
-    },
-    {
-        "name": "DBS Bank Ltd - Chi nhánh Thành phố Hồ Chí Minh",
-        "code": "DBS",
-        "bin": "796500",
-        "shortName": "DBSBank"
-    },
-    {
-        "name": "Ngân hàng TNHH MTV Woori Việt Nam",
-        "code": "WVN",
-        "bin": "970457",
-        "shortName": "Woori"
-    },
-    {
         "name": "Ngân hàng Kookmin - Chi nhánh Hà Nội",
         "code": "KBHN",
         "bin": "970462",
         "shortName": "KookminHN"
+    },
+    {
+        "name": "Ngân hàng KEB Hana – Chi nhánh Thành phố Hồ Chí Minh",
+        "code": "KEBHANAHCM",
+        "bin": "970466",
+        "shortName": "KEBHanaHCM"
+    },
+    {
+        "name": "Ngân hàng KEB Hana – Chi nhánh Hà Nội",
+        "code": "KEBHANAHN",
+        "bin": "970467",
+        "shortName": "KEBHANAHN"
+    },
+    {
+        "name": "Công ty Tài chính TNHH MTV Mirae Asset (Việt Nam) ",
+        "code": "MAFC",
+        "bin": "977777",
+        "shortName": "MAFC"
+    },
+    {
+        "name": "Ngân hàng Citibank, N.A. - Chi nhánh Hà Nội",
+        "code": "CITIBANK",
+        "bin": "533948",
+        "shortName": "Citibank"
     },
     {
         "name": "Ngân hàng Kookmin - Chi nhánh Thành phố Hồ Chí Minh",
@@ -270,40 +276,22 @@
         "shortName": "KookminHCM"
     },
     {
-        "name": "Ngân hàng Thương mại TNHH MTV Xây dựng Việt Nam",
-        "code": "CBB",
-        "bin": "970444",
-        "shortName": "CBBank"
+        "name": "Ngân hàng Chính sách Xã hội",
+        "code": "VBSP",
+        "bin": "999888",
+        "shortName": "VBSP"
     },
     {
-        "name": "Ngân hàng Nonghyup - Chi nhánh Hà Nội",
-        "code": "NHB HN",
-        "bin": "801011",
-        "shortName": "Nonghyup"
+        "name": "Ngân hàng TNHH MTV Woori Việt Nam",
+        "code": "WVN",
+        "bin": "970457",
+        "shortName": "Woori"
     },
     {
-        "name": "Ngân hàng TNHH MTV CIMB Việt Nam",
-        "code": "CIMB",
-        "bin": "422589",
-        "shortName": "CIMB"
-    },
-    {
-        "name": "Ngân hàng TMCP Đông Á",
-        "code": "DOB",
-        "bin": "970406",
-        "shortName": "DongABank"
-    },
-    {
-        "name": "Ngân hàng Thương mại TNHH MTV Dầu Khí Toàn Cầu",
-        "code": "GPB",
-        "bin": "970408",
-        "shortName": "GPBank"
-    },
-    {
-        "name": "Ngân hàng TNHH MTV Hong Leong Việt Nam",
-        "code": "HLBVN",
-        "bin": "970442",
-        "shortName": "HongLeong"
+        "name": "Ngân hàng Liên doanh Việt - Nga",
+        "code": "VRB",
+        "bin": "970421",
+        "shortName": "VRB"
     },
     {
         "name": "Ngân hàng United Overseas - Chi nhánh TP. Hồ Chí Minh",
@@ -312,16 +300,10 @@
         "shortName": "UnitedOverseas"
     },
     {
-        "name": "Ngân hàng TNHH MTV HSBC (Việt Nam)",
-        "code": "HSBC",
-        "bin": "458761",
-        "shortName": "HSBC"
-    },
-    {
-        "name": "Ngân hàng Công nghiệp Hàn Quốc - Chi nhánh Hà Nội",
-        "code": "IBK - HN",
-        "bin": "970455",
-        "shortName": "IBKHN"
+        "name": "Ngân hàng TNHH MTV Standard Chartered Bank Việt Nam",
+        "code": "SCVN",
+        "bin": "970410",
+        "shortName": "StandardChartered"
     },
     {
         "name": "Ngân hàng TNHH MTV Public Việt Nam",
@@ -330,10 +312,10 @@
         "shortName": "PublicBank"
     },
     {
-        "name": "Ngân hàng Công nghiệp Hàn Quốc - Chi nhánh TP. Hồ Chí Minh",
-        "code": "IBK - HCM",
-        "bin": "970456",
-        "shortName": "IBKHCM"
+        "name": "Ngân hàng Nonghyup - Chi nhánh Hà Nội",
+        "code": "NHB HN",
+        "bin": "801011",
+        "shortName": "Nonghyup"
     },
     {
         "name": "Ngân hàng TNHH Indovina",
@@ -342,9 +324,57 @@
         "shortName": "IndovinaBank"
     },
     {
-        "name": "Ngân hàng TNHH MTV Standard Chartered Bank Việt Nam",
-        "code": "SCVN",
-        "bin": "970410",
-        "shortName": "StandardChartered"
+        "name": "Ngân hàng Công nghiệp Hàn Quốc - Chi nhánh TP. Hồ Chí Minh",
+        "code": "IBK - HCM",
+        "bin": "970456",
+        "shortName": "IBKHCM"
+    },
+    {
+        "name": "Ngân hàng Công nghiệp Hàn Quốc - Chi nhánh Hà Nội",
+        "code": "IBK - HN",
+        "bin": "970455",
+        "shortName": "IBKHN"
+    },
+    {
+        "name": "Ngân hàng TNHH MTV HSBC (Việt Nam)",
+        "code": "HSBC",
+        "bin": "458761",
+        "shortName": "HSBC"
+    },
+    {
+        "name": "Ngân hàng TNHH MTV Hong Leong Việt Nam",
+        "code": "HLBVN",
+        "bin": "970442",
+        "shortName": "HongLeong"
+    },
+    {
+        "name": "Ngân hàng Thương mại TNHH MTV Dầu Khí Toàn Cầu",
+        "code": "GPB",
+        "bin": "970408",
+        "shortName": "GPBank"
+    },
+    {
+        "name": "Ngân hàng TMCP Đông Á",
+        "code": "DOB",
+        "bin": "970406",
+        "shortName": "DongABank"
+    },
+    {
+        "name": "DBS Bank Ltd - Chi nhánh Thành phố Hồ Chí Minh",
+        "code": "DBS",
+        "bin": "796500",
+        "shortName": "DBSBank"
+    },
+    {
+        "name": "Ngân hàng TNHH MTV CIMB Việt Nam",
+        "code": "CIMB",
+        "bin": "422589",
+        "shortName": "CIMB"
+    },
+    {
+        "name": "Ngân hàng Thương mại TNHH MTV Xây dựng Việt Nam",
+        "code": "CBB",
+        "bin": "970444",
+        "shortName": "CBBank"
     }
 ]
